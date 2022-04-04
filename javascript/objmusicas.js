@@ -113,20 +113,6 @@ const music = [
   },
   {
     music_id: 17,
-    title: '',
-    performer: '',
-    level: 'Easy',
-    src: ,
-  },
-  {
-    music_id: 18,
-    title: '',
-    performer: '',
-    level: 'Easy',
-    src: ,
-  },
-  {
-    music_id: 19,
     title: 'Cheia De Manias',
     performer: 'Raça Negra',
     level: 'Easy',
