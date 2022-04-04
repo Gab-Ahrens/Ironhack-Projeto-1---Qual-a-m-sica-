@@ -4,3 +4,30 @@ html {
     color: #31D156;
     font-family:'Courier New', Courier, monospace;
 }
+
+#welcome {
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 6em;
+    padding-top: 6px;
+    margin: 20% auto 5px auto;
+}
+
+#welcome p {
+    font-size: 1.2em;
+    padding: 5px 20%;
+    margin: 0px;
+}
+
+#startbtn {
+    border-radius: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #31D156;
+    border: 5px dotted #212121;
+}
