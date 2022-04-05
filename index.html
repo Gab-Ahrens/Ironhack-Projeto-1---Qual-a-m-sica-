@@ -5,28 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css"/>
-    <script src="./javascript/script.js"></script>
-    <script src="./javascript/objmusicas.js"></script>
+
     <title>Qual é a músicas?</title>
 </head>
 <body>
     <div class="container">
+        <div id="instructionsText">
+            <p>Escute 15 segundos de cada música e advinhe o título e o nome do artista. Clique em "Começar" quando estiver pronto.</p>
+        </div>
         <div id="question-container" class="hide">
-            <div id="question">Pergunta</div>
+            <div class="controls">
+                <button id="listenbtn" class="listenbtn-class">Aperte para ouvir a música!</button>
+            </div>
             <div id="answer-button" class="btn-grid">
-                <button class="btn">Opção 1</button>
-                <button class="btn">Opção 2</button>
-                <button class="btn">Opção 3</button>
-                <button class="btn">Opção 4</button>
+                <input type="text" placeholder="Nome da música" id="repostaTitulo">
+                <input type="text" placeholder="Nome do artista" id="repostaArtista">
             </div>
         </div>
         <div class="controls">
             <button id="startbtn" class="startbtn-class">Começar</button>
-            <button id="nextbtn" class="nextbtn-class">Próxima </button>
+            <button id="submitbtn" class="hide">Enviar</button>
+            <button id="nextbtn" class="hide">Próxima</button>
         </div>
 
 
     </div>
 
+
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/objmusicas.js"></script>
 </body>
 </html>
+
+<!-- <input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10"> -->
