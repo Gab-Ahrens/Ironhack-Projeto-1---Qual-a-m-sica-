@@ -19,21 +19,20 @@ function iniciarJogo() { // vai dar inicio ao jogo, faz o botão 'Começar' desa
     jogoMain.classList.remove('hide');
     enviarButton.classList.remove('hide');
     proximaButton.classList.remove('hide');
-    console.log(musicPlayer.shuffledMusic());
+    console.log(musicPlayer.shuffledMusic())
 }
 
 
 
 function randomMusic() {
-    // let randomSong = music[Math.floor(Math.random()*music.length)];
-    // return randomSong.src;
+    let randomSong = music[Math.floor(Math.random()*music.length)];
+    return randomSong.src;
 
 }
 
 
 function escutarMusica() {
-    
-    let audio = new Audio(randomMusic());
+    let audio = new Audio(musicPlayer.playSong(0));
     audio.play();
     console.log(audio);
 }
@@ -45,11 +44,11 @@ function nomeMusica() {
 function nomeArtista() {
 }
 
+function enviarResposta() {
+    // Resposta que o jogador escolher(ou escrever)?
+}
 
 function proximaPergunta() {
     // Passa para a próxima pergunta
 }
 
-function enviarResposta() {
-    // Resposta que o jogador escolher(ou escrever)?
-}
