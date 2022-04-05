@@ -16,7 +16,7 @@ body {
 .container {
     width: 800px;
     max-width: 80%;
-    background-color: rgb(94, 197, 89);
+    background-color: rgb(69, 127, 167);
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
@@ -58,4 +58,24 @@ body {
 
 .hide {
     display: none;
+}
+
+#playbtn {
+    width: 20px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#listenbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#descr {
+    padding-top: 10px;
+    margin: auto;
+    font-size: 1.2em;
 }

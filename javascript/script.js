@@ -1,3 +1,4 @@
+const musicPlayer = new Player
 const comecarButton = document.getElementById('startbtn');
 const welcomeText = document.getElementById('instructionsText')
 const jogoMain = document.getElementById('question-container')
@@ -9,23 +10,32 @@ const ouvirButton = document.getElementById('listenbtn')
 comecarButton.addEventListener("click", iniciarJogo);
 ouvirButton.addEventListener("click", escutarMusica);
 proximaButton.addEventListener("click", randomMusic);
+enviarButton.addEventListener("click", enviarResposta);
 
 function iniciarJogo() { // vai dar inicio ao jogo, faz o botão 'Começar' desaparecer.
+    musicPlayer.shuffleMusicArray()
     comecarButton.classList.add('hide');
     welcomeText.classList.add('hide');
     jogoMain.classList.remove('hide');
     enviarButton.classList.remove('hide');
     proximaButton.classList.remove('hide');
+    console.log(musicPlayer.shuffledMusic());
 }
 
+
+
 function randomMusic() {
-    return music[Math.floor(Math.random()*music.length)];
+    // let randomSong = music[Math.floor(Math.random()*music.length)];
+    // return randomSong.src;
+
 }
 
 
 function escutarMusica() {
-    var audio = new Audio("./assets/audio/hey-ya-outkast.mp3");
+    
+    let audio = new Audio(randomMusic());
     audio.play();
+    console.log(audio);
 }
 
 function nomeMusica() {
@@ -35,10 +45,6 @@ function nomeMusica() {
 function nomeArtista() {
 }
 
-
-function reposta() {
-    
-}
 
 function proximaPergunta() {
     // Passa para a próxima pergunta

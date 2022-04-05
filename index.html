@@ -15,7 +15,10 @@
         </div>
         <div id="question-container" class="hide">
             <div class="controls">
-                <button id="listenbtn" class="listenbtn-class">Aperte para ouvir a música!</button>
+                <button id="listenbtn" class="listenbtn-class"><img id="playbtn" src="./assets/images/playbtn.png"> Aperte para ouvir a música!</button>
+            </div>
+            <div>
+                <p id="descr">Preencha os campos abaixo:</p>
             </div>
             <div id="answer-button" class="btn-grid">
                 <input type="text" placeholder="Nome da música" id="repostaTitulo">
@@ -24,15 +27,17 @@
         </div>
         <div class="controls">
             <button id="startbtn" class="startbtn-class">Começar</button>
-            <button id="submitbtn" class="hide">Enviar</button>
-            <button id="nextbtn" class="hide">Próxima</button>
+            <button id="submitbtn" class="hide">Enviar respostas</button>
+            <button id="nextbtn" class="hide">Próxima música</button>
         </div>
 
 
     </div>
 
     <script src="./javascript/objmusicas.js"></script>
+    <script src="./javascript/player.js"></script>
     <script src="./javascript/script.js"></script>
+
     
 </body>
 </html>
