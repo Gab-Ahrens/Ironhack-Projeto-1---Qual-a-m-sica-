@@ -1,33 +1,46 @@
-
-html {
-    background-color: #212121;
-    color: #31D156;
+* {
+    box-sizing: border-box;
     font-family:'Courier New', Courier, monospace;
 }
 
-#welcome {
-    text-align: center;
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-#welcome h1 {
-    font-size: 6em;
-    padding-top: 6px;
-    margin: 20% auto 5px auto;
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(94, 197, 89);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
 }
 
-#welcome p {
-    font-size: 1.2em;
-    padding: 5px 20%;
-    margin: 0px;
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin 20px 0;
 }
 
-#startbtn {
-    border-radius: 2px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.3em;
+.btn {
+    border: 1px solid;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    padding-top: 5px;
+}
+
+.startbtn-class, .nextbtn-class {
     margin-top: 10px;
     font-weight: bold;
-    color: white;
-    background-color: #31D156;
-    border: 5px dotted #212121;
+    font-size: 1.2em;
 }
