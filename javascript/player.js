@@ -2,6 +2,7 @@ class Player {
     constructor() {
         this.music = [...music];
         this.points = 0;
+        this.rodada = 0;
     }
 
     shuffleMusicArray() {
@@ -9,7 +10,25 @@ class Player {
         return shuffledArray;
 };
 
-// for (let i = 0; i < positions.length; i++) {
+    playerScore(){
+        return this.points;
+    }
+
+    playSong() {
+        return this.music[this.rodada].src;
+    }
+
+    correctTitle () {
+        console.log(this.music);
+        return this.music[this.rodada].title;
+    }
+
+    correctPerformer () {
+        return this.music[this.rodada].performer;
+    }
+
+
+    // for (let i = 0; i < positions.length; i++) {
 //     const RNG = Math.floor(Math.random() * positions.length);
 
 //     const memory = positions[i];
@@ -37,12 +56,6 @@ class Player {
     // shuffledMusic() {
     //     return this.music;
     // }
-
-    playSong(index) {
-        return this.music[index].src;
-    }
-
-
 
 
 }

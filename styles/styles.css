@@ -79,3 +79,32 @@ body {
     margin: auto;
     font-size: 1.2em;
 }
+
+.points {
+    padding-top: 10px;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+#errou-tudo {
+    padding-top: 10px;
+    margin: auto;
+    font-size: 1.2em;
+    color: red;
+    font-weight: bold;
+}
+
+#acertou-uma {
+    padding-top: 10px;
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#acertou-ambas {
+    padding-top: 10px;
+    margin: auto;
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+}
