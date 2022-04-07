@@ -11,6 +11,8 @@ const pontosTotal = document.getElementById('points');
 const errouAmbas = document.getElementById('errou-tudo');
 const acertouUma = document.getElementById('acertou-uma');
 const acertouAmbas = document.getElementById('acertou-ambas');
+const contaRodadas = document.getElementById('contarodadas')
+const finalText = document.getElementById('fimtxt')
 
 comecarButton.addEventListener("click", iniciarJogo);
 ouvirButton.addEventListener("click", escutarMusica);
@@ -29,7 +31,7 @@ function iniciarJogo() { // vai dar inicio ao jogo, faz o botão 'Começar' desa
 
 function escutarMusica() {
     let audio = new Audio(musicPlayer.playSong(musicPlayer.rodada));
-    audio.play();
+    audio.play(); 
 }
 
 function enviarResposta() {
@@ -59,5 +61,18 @@ function proximaPergunta() {
     acertouAmbas.classList.add('hide');
     acertouUma.classList.add('hide');
     errouAmbas.classList.add('hide');
+    contaRodadas.innerText = 10 - musicPlayer.rodada;
+    if (musicPlayer.rodada === 10) {
+        gameOver();
+    }
+}
+
+// const relogio = setTimeout(gameOver(), 300000);
+
+function gameOver() {
+    jogoMain.classList.add('hide');
+    enviarButton.classList.add('hide');
+    finalText.classList.remove('hide');
+    pontosTotal.innerText = musicPlayer.points;
 }
 

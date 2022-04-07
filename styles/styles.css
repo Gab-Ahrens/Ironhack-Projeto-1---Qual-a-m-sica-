@@ -75,15 +75,20 @@ body {
 }
 
 #descr {
-    padding-top: 10px;
+    padding-top: 5px;
     margin: auto;
     font-size: 1.2em;
 }
 
-.points {
-    padding-top: 10px;
-    margin: auto;
-    font-size: 1.2em;
+.points-rodadas {
+    /* display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 10px; */
+    margin-right: 10px;
+    padding-right: 10px;
+    font-size: 1.2em;w
 }
 
 #errou-tudo {

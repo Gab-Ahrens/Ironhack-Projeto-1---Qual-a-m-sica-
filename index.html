@@ -13,12 +13,17 @@
         <div id="instructionsText">
             <p>Escute 15 segundos de cada música e advinhe o título e o nome do artista. Clique em "Começar" quando estiver pronto.</p>
         </div>
+        <div class="hide" id="fimtxt">
+            <p>Fim do jogo! Você fez <span id="points">0</span> pontos!</p>
+            <button onClick="window.location.reload();">Jogar novamente!</button>
+        </div>
         <div id="question-container" class="hide">
             <div class="controls">
                 <button id="listenbtn" class="listenbtn-class"><img id="playbtn" src="./assets/images/playbtn.png"> Aperte para ouvir a música!</button>
             </div>
-            <div>
-                <p class="points">Pontos: <span id="points">0</span></p>
+            <div class="points-rodadas">
+                <p>Pontos: <span id="points">0</span></p>
+                <p>Restam <span id="contarodadas">10</span> rodadas</p>
             </div>
             <div>
                 <p id="descr">Preencha os campos abaixo:</p>
