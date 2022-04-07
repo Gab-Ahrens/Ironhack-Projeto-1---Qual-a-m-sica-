@@ -11,12 +11,17 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background-color: rgb(175, 174, 174);
+}
+
+.controls {
+    display: flex;
 }
 
 .container {
     width: 800px;
     max-width: 80%;
-    background-color: rgb(69, 127, 167);
+    background-color: rgb(204, 229, 241);
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
@@ -30,14 +35,13 @@ body {
     padding-top: 10px;
 }
 
-.repostaTitulo, .repostaArtista {
+#repostaTitulo, #repostaArtista {
     border: 1px solid;
     color: black;
     background-color: white;
     border-radius: 5px;
-    padding: 5px 10px;
-    outline: none;
-    padding-top: 5px;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .startbtn-class, .listenbtn-class {
@@ -48,12 +52,23 @@ body {
 
 #submitbtn, #nextbtn {
     margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: bold;
     font-size: 1.2em;
 }
 
+h1 {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+
 #instructionsText {
     font-weight: bold;
+    margin: 10px;
 }
 
 .hide {
@@ -74,42 +89,52 @@ body {
     align-items: center;
 }
 
+#jogardenovo {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
 #descr {
+    font-weight: bold;
     padding-top: 5px;
     margin: auto;
     font-size: 1.2em;
 }
 
 .points-rodadas {
-    /* display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-top: 10px; */
+    font-weight: bold;
+    display: flex;
+    font-size: 1.2em;
+}
+
+#pontoserodadas {
     margin-right: 10px;
-    padding-right: 10px;
-    font-size: 1.2em;w
 }
 
 #errou-tudo {
-    padding-top: 10px;
-    margin: auto;
+    margin: 0px 0px 0px auto;
     font-size: 1.2em;
     color: red;
     font-weight: bold;
 }
 
 #acertou-uma {
-    padding-top: 10px;
-    margin: auto;
+    margin: 0px 0px 0px auto;
     font-size: 1.2em;
     font-weight: bold;
 }
 
 #acertou-ambas {
-    padding-top: 10px;
-    margin: auto;
+    margin: 0px 0px 0px auto;
     color: green;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+#fimtxt {
+    font-weight: bold;
+    padding-top: 5px;
+    margin: auto;
+    font-size: 1.2em;
 }

@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
 
-    <title>Qual é a músicas?</title>
+    <title>Que Música É Essa?</title>
 </head>
 <body>
     <div class="container">
         <div id="instructionsText">
-            <p>Escute 15 segundos de cada música e advinhe o título e o nome do artista. Clique em "Começar" quando estiver pronto.</p>
+            <h1>𝄞 Que Música É Essa? ♬</h1>
+            <p>Bem-vindo! Para testar seu conhecimento musical, tente advinhar o título e o artista de cada música.</p>
+            <ul>
+                <li>Cada resposta correta vale 5 pontos</li>
+                <li>O jogo tem 10 rodadas</li>
+                <li>Preste atenção na acentuação gráfica</li>
+            </ul>
+            <p>Aperte o botão para começar.</p>
         </div>
         <div class="hide" id="fimtxt">
-            <p>Fim do jogo! Você fez <span id="points">0</span> pontos!</p>
-            <button onClick="window.location.reload();">Jogar novamente!</button>
+            <p>Fim do jogo! Você fez <span id="pointsfinal">0</span> pontos!</p>
+            <button id="jogardenovo" onClick="window.location.reload();">Jogar novamente!</button>
         </div>
         <div id="question-container" class="hide">
             <div class="controls">
                 <button id="listenbtn" class="listenbtn-class"><img id="playbtn" src="./assets/images/playbtn.png"> Aperte para ouvir a música!</button>
             </div>
             <div class="points-rodadas">
-                <p>Pontos: <span id="points">0</span></p>
-                <p>Restam <span id="contarodadas">10</span> rodadas</p>
+                <p id="pontoserodadas">Pontos: <span id="points">0</span> |</p>
+                <p id="pontoserodadas">Faltam <span id="contarodadas">10</span> rodadas</p>
             </div>
             <div>
-                <p id="descr">Preencha os campos abaixo:</p>
+                <p id="descr">Preencha suas respostas nos campos abaixo:</p>
             </div>
             <div id="answer-button" class="btn-grid">
                 <input type="text" placeholder="Nome da música" id="repostaTitulo">
@@ -34,7 +42,7 @@
             </div>
         </div>
         <div class="controls">
-            <button id="startbtn" class="startbtn-class">Começar</button>
+            <button id="startbtn" class="startbtn-class">Começar o jogo!</button>
             <button id="submitbtn" class="hide">Enviar respostas</button>
             <button id="nextbtn" class="hide">Próxima música</button>
             <div id="errou-tudo" class="hide">

@@ -11,14 +11,18 @@ const pontosTotal = document.getElementById('points');
 const errouAmbas = document.getElementById('errou-tudo');
 const acertouUma = document.getElementById('acertou-uma');
 const acertouAmbas = document.getElementById('acertou-ambas');
-const contaRodadas = document.getElementById('contarodadas')
-const finalText = document.getElementById('fimtxt')
+const contaRodadas = document.getElementById('contarodadas');
+const pontosFinal = document.getElementById('pointsfinal')
+const finalText = document.getElementById('fimtxt');
 
+// Botões
 comecarButton.addEventListener("click", iniciarJogo);
 ouvirButton.addEventListener("click", escutarMusica);
 proximaButton.addEventListener("click", proximaPergunta);
 enviarButton.addEventListener("click", enviarResposta);
 
+
+// Funções
 function iniciarJogo() { // vai dar inicio ao jogo, faz o botão 'Começar' desaparecer.
     musicPlayer.shuffleMusicArray()
     comecarButton.classList.add('hide');
@@ -26,7 +30,7 @@ function iniciarJogo() { // vai dar inicio ao jogo, faz o botão 'Começar' desa
     jogoMain.classList.remove('hide');
     enviarButton.classList.remove('hide');
     pontosTotal.classList.remove('hide');
-    console.log(musicPlayer.shuffleMusicArray())
+    
 }
 
 function escutarMusica() {
@@ -38,10 +42,10 @@ function enviarResposta() {
     if ((respostaTitle.value.toUpperCase() === musicPlayer.correctTitle(musicPlayer.rodada).toUpperCase()) && (respostaPerformer.value.toUpperCase() === musicPlayer.correctPerformer(musicPlayer.rodada).toUpperCase())) {
         musicPlayer.points += 10;
         pontosTotal.innerText = musicPlayer.points;
-        console.log("acertei as duas");
+        
         acertouAmbas.classList.remove('hide');
     } else if ((respostaTitle.value.toUpperCase() === musicPlayer.correctTitle(musicPlayer.rodada).toUpperCase()) || (respostaPerformer.value.toUpperCase() === musicPlayer.correctPerformer(musicPlayer.rodada).toUpperCase())) {
-        console.log("Acertei apenas uma");
+        
         musicPlayer.points += 5;
         pontosTotal.innerText = musicPlayer.points;
         acertouUma.classList.remove('hide');
@@ -67,12 +71,11 @@ function proximaPergunta() {
     }
 }
 
-// const relogio = setTimeout(gameOver(), 300000);
 
 function gameOver() {
     jogoMain.classList.add('hide');
     enviarButton.classList.add('hide');
     finalText.classList.remove('hide');
-    pontosTotal.innerText = musicPlayer.points;
+    pontosFinal.innerText = musicPlayer.points;
 }
 
