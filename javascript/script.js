@@ -1,3 +1,4 @@
+// Declarações de variáveis
 const musicPlayer = new Player;
 const comecarButton = document.getElementById('startbtn');
 const welcomeText = document.getElementById('instructionsText');
@@ -15,6 +16,7 @@ const contaRodadas = document.getElementById('contarodadas');
 const pontosFinal = document.getElementById('pointsfinal')
 const finalText = document.getElementById('fimtxt');
 
+
 // Botões
 comecarButton.addEventListener("click", iniciarJogo);
 ouvirButton.addEventListener("click", escutarMusica);
@@ -30,8 +32,8 @@ function iniciarJogo() { // vai dar inicio ao jogo, faz o botão 'Começar' desa
     jogoMain.classList.remove('hide');
     enviarButton.classList.remove('hide');
     pontosTotal.classList.remove('hide');
-    
 }
+
 
 function escutarMusica() {
     let audio = new Audio(musicPlayer.playSong(musicPlayer.rodada));
@@ -39,6 +41,7 @@ function escutarMusica() {
 }
 
 function enviarResposta() {
+    pararMusica();
     if ((respostaTitle.value.toUpperCase() === musicPlayer.correctTitle(musicPlayer.rodada).toUpperCase()) && (respostaPerformer.value.toUpperCase() === musicPlayer.correctPerformer(musicPlayer.rodada).toUpperCase())) {
         musicPlayer.points += 10;
         pontosTotal.innerText = musicPlayer.points;

@@ -27,7 +27,6 @@ class Player {
     }
 
     correctTitle () {
-        console.log(this.music);
         return this.music[this.rodada].title;
     }
 
