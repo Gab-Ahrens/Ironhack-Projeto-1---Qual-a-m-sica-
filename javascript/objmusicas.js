@@ -204,7 +204,7 @@ const music = [
   },
   {
     music_id: 30,
-    title: 'Descobridos Dos Sete Mares',
+    title: 'Descobridor Dos Sete Mares',
     performer: 'Tim Maia',
     level: 'Easy',
     src: "./assets/audio/descobridor-dos-sete-mares-tim-maia.mp3",
