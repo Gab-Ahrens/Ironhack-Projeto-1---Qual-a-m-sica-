@@ -16,7 +16,7 @@ const music = [
   {
     music_id: 3,
     title: 'Happy',
-    performer: 'Pharell Williams',
+    performer: 'Pharrell Williams',
     level: 'Easy',
     src: "./assets/audio/happy-pharell-williams.mp3",
   },

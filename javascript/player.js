@@ -16,6 +16,7 @@ class Player {
             [this.music[i], this.music[j]] = [this.music[j], this.music[i]];
         }
         return this.music;
+        console.log(this.music);
     }
 
     playerScore(){

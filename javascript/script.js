@@ -41,7 +41,6 @@ function escutarMusica() {
 }
 
 function enviarResposta() {
-    pararMusica();
     if ((respostaTitle.value.toUpperCase() === musicPlayer.correctTitle(musicPlayer.rodada).toUpperCase()) && (respostaPerformer.value.toUpperCase() === musicPlayer.correctPerformer(musicPlayer.rodada).toUpperCase())) {
         musicPlayer.points += 10;
         pontosTotal.innerText = musicPlayer.points;
