@@ -14,7 +14,7 @@ Each round has a total of 10 questions. Once you have finished the game, check o
 
 **About**
 
-This game was developed in vanilla Javascript (ES6) as the first coding project within Ironhack's coding boot camp.
+This game was developed in vanilla Javascript (ES6) as my first coding project within Ironhack's coding boot camp.
 
 
 **[CLICK HERE TO PLAY](https://gab-ahrens.github.io/Name-The-Music/)**
